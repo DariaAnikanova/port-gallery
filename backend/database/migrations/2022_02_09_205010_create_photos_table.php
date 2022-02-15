@@ -14,9 +14,10 @@ return new class extends Migration
     public function up()
     {
         Schema::create('photos', function (Blueprint $table) {
-            $table->integer('id');
-            $table->string('title');
-            $table->string('description');
+            // $table->integer('id');
+            $table->id();
+            $table->string('title'); // String has limit of characters while text does not
+            $table->text('description');
             $table->string('img');
             $table->string('date');
             $table->boolean('featured');

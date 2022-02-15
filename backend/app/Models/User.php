@@ -10,7 +10,6 @@ class User extends Model
     public $timestamps = false;
     use HasFactory;
     protected $fillable = [
-        "id",
         'name',
         'phone',
         'email',
